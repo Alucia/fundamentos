@@ -2,19 +2,19 @@
 console.log("EJERCICIO1");
 var C = 0;
 var Resultado;
-console.log(C);
+console.log("El valor de C es " + C);
 var A = 4 + ((Math.pow((24 % 5),2)+6)/3);
-console.log(A);
+console.log("El valor de A es:" + A);
 var B = A * (32 / 3 * 15);
-console.log(B);
+console.log("El valor de B es:" + B);
 var C = C + (B + 10 * (A / 2 + 15)/ Math.pow(3,3)) + 2 * (B + A) + 9 * B;
-console.log(C);
+console.log("El nuevo valor de C es:" + C);
 A = C - A;
-console.log(A);
+console.log("El valor de A es:" + A);
 B = A + C;
-console.log(B);
+console.log("El nuevo valor a B es:" + B);
 Resultado = A + B + C;
-alert("El resultado es:" + " " + Resultado);
+conole.log("El resultado es:" + " " + Resultado);
 
 console.log("EJERCICIO2");
 var K = 5000;
@@ -47,11 +47,28 @@ var result;
 result = ((a === c)&&(b > d))||((a != e)&&(c < e) || (e < a) && (b != c))
 console.log("El resultado es:" + result);
 
+console.log("EJERCICIO4");
+var aLateral;
+var aTotal;
+var volumen;
+var altura;
+var lado = prompt("Ingrese el valor del lado:");
+var apotema = prompt("Ingrese el Apotema");
+
+altura = Math.sqrt(Math.pow(apotema,2) - 0.75 * Math.pow(lado,2));
+console.log("La altura es:" + " " + altura);
+alateral = 3 *lado*  apotema;
+console.log("Area lateral:" + " " + alateral);
+atotal = alateral + lado * (1.73219 * 6/4);
+console.log("El área total:" + " " + atotal);
+volumen = ((Math.pow(lado,2) * 1.7321 ) * 6/4 ) * altura/3;
+console.log("el volumen es:" + " " + volumen);
+
 console.log("EJERCICIO3-loop");
 var seguir = true;
 var total = 0;
 while(seguir) {
-    var precio = prompt("Ingrese el orecio del producto");
+    var precio = prompt("Ingrese el precio del producto");
     var cantidad = prompt("Ingrese la cantidad");
 
     total = total + precio * cantidad;
